@@ -1,0 +1,89 @@
+<div class="container-fluid g-0 p-2">
+
+    <div class="row g-0">
+        
+        <!-- <div class="col-md-2 d-flex justify-content-center align-items-center">
+            <img src="../../assets/images/prof04.jpg" alt="Profile Image" class="profile">
+        </div> -->
+
+        <div class="col ps-2">
+
+            <div class="row g-0">
+
+                <div class="col-md-10 text-center">
+                    <span class="name">{{employee.firstname | titlecase}} {{employee.lastname | titlecase}}</span>
+                </div>
+
+                <div class="col-md-2 d-flex justify-content-center align-items-center">
+                    <div class="btn-group" role="group">
+                        <button type="button" class="btn btn-outline-success"
+                            (click)="editEmployeeClicked()">Edit</button>
+                        <button type="button" class="btn btn-outline-danger"
+                            (click)="deleteEmployeeClicked()">Delete</button>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row g-0 mt-3">
+
+                <div class="col-md">
+
+                    <table class="table table-hover mx-auto">
+                        <thead class="text-center fs-5 fst-italic text-secondary">
+                            <tr>
+                                <td colspan="2">Skill Management</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td> Rating</td>
+                                <td>{{employee.rating}}</td>
+                            </tr>
+                            <tr>
+                                <td>feedback</td>
+                                <td>{{employee.feedback}}</td>
+                            </tr>
+                            <tr>
+                                <td>Duration</td>
+                                <td>{{employee.duration}}</td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+                <div class="col">
+
+                    <table class="table table-hover mx-auto">
+                        <thead class="text-center fs-5 fst-italic text-secondary">
+                            <tr>
+                                <td colspan="2">Add Items</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Improvements </td>
+                                <td>{{employee.improvements | titlecase}}</td>
+                            </tr>
+                            <tr>
+                                <td>Completed Items</td>
+                                <td>{{employee.completedItems | titlecase}}</td>
+                            </tr>
+                            <tr>
+                                <td>Pending Items </td>
+                                <td>{{employee.pendingItems | titlecase}}</td>
+                            </tr>
+                           
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
